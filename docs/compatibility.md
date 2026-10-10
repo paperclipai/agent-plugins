@@ -17,7 +17,7 @@ Source documentation was checked on 2026-10-10.
 | Cursor | `dstack/.cursor-plugin/plugin.json` and the root marketplace catalog | Preferred place to add useful agents, rules, commands, hooks, or variables; adapt them for other hosts when worthwhile. |
 | Agent Plugins | `dstack/plugin.json`, standard `skills/<name>/SKILL.md` layout | Portable skills and optional MCP configuration; not a universal agents/hooks runtime. |
 | Claude Code / Cowork | `dstack/.claude-plugin/plugin.json` and the root Claude catalog | Shared content, with host-specific configuration when needed. Code and Cowork can differ too. |
-| Codex | Individual discovery symlinks into `dstack/skills` | This machine loads `~/.codex/skills`; current docs also support `~/.agents/skills` and symlink targets. |
+| Codex | Individual discovery symlinks into `dstack/skills` | Use `~/.agents/skills` with symlink targets in this checkout; migrate matching legacy `.codex` links. |
 | Vercel skills CLI | Give it `./dstack` as a local package | Skill discovery/installation only; do not assume it installs agents, hooks, or MCP configuration. |
 
 The manifests describe the same dstack content. A root Agent Plugins manifest
@@ -48,14 +48,13 @@ add an empty `agents`, `hooks`, or `commands` directory just to resemble a templ
 ## Choose installation based on whether you are authoring or consuming
 
 For active authoring, use `scripts/install.py`: its links point directly to this
-checkout. It currently exposes only skills. It uses `.codex/skills` for Codex,
-`.claude/skills` for Claude Code, and `.cursor/skills` for Cursor. All are scoped
-to the selected home, and conflicting files cause a failure before any links
-are created. `--home` supports temporary-home verification.
-
-Codex and Cursor also understand the shared `.agents/skills` location. We preserve
-the existing Codex paths during this migration to avoid creating another copy of
-each registration and to keep old links in personal skills working.
+checkout. It currently exposes only skills. Codex and Cursor share
+`.agents/skills`; Claude Code uses `.claude/skills`. Selecting both Codex and
+Cursor creates one shared link per skill. Matching old `.codex/skills` and
+`.cursor/skills` links are removed after the shared links exist. Different
+content or targets cause a failure before any planned changes. `--home` supports
+temporary-home verification. Keep cross-skill references portable instead of
+relying on an old absolute discovery path.
 
 Vercel's CLI is useful for consuming skills from this package:
 

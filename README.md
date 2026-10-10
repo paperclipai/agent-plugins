@@ -46,16 +46,15 @@ python3 scripts/install.py --agent codex
 # Optional: --agent claude-code or --agent cursor; repeat --agent for several.
 ```
 
-The installer links individual skill folders, preserves unrelated entries, and
-refuses conflicts. Its Codex path is `~/.codex/skills`, matching this machine's
-existing installation; see the compatibility notes for `.agents/skills` support.
-It installs skills only. Do not also install dstack as a native plugin in the
-same agent unless you intend to have both registrations.
+The installer links individual skill folders into `~/.agents/skills` for both
+Codex and Cursor, or `~/.claude/skills` for Claude Code. All links point directly
+to this checkout. Matching legacy links in `~/.codex/skills` and `~/.cursor/skills`
+are removed only after the shared registration is available. Different files or
+targets cause a preflight conflict; unrelated entries are preserved.
 
-The initial migration preserves the two existing Codex discovery paths as
-symlinks into `dstack/skills`. The existing `~/.agents/poteto-stack` path points
-to `vendor/pstack`, preserving its existing skill links. Other skills and agent
-installations are unchanged.
+It installs skills only. Do not also install dstack as a native plugin in the
+same agent unless you intend to have both registrations. Pstack's installer below
+also links Codex skills into `~/.agents/skills` from this vendored checkout.
 
 For a separate pstack installation, its existing installer supports:
 
