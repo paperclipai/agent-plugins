@@ -18,6 +18,7 @@ agent-plugins/
 │   ├── .claude-plugin/plugin.json  # Claude packaging
 │   └── skills/
 │       ├── dotta-ui-ux/
+│       ├── goal-poteto-style-definition/
 │       └── trees-maps-theorems/
 ├── vendor/
 │   ├── pstack/                     # Complete upstream snapshot, ordinary files
@@ -27,7 +28,7 @@ agent-plugins/
 ```
 
 `dstack` can grow agents, hooks, commands, and MCP integrations when there is a
-real use for them. It currently contains two skills, not placeholder agents.
+real use for them. It currently contains three skills.
 The root Cursor and Claude catalogs expose `dstack`; the preserved pstack port
 uses its own installer and is not advertised as a native plugin.
 
