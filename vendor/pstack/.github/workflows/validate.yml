@@ -1,0 +1,30 @@
+name: Validate
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  skills:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r scripts/requirements-dev.txt
+      - run: python scripts/validate.py
+      - run: python -m unittest discover -s tests -v
+  tools:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: skills/poteto-mode/scripts
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: '1.4.2'
+      - run: bun install --frozen-lockfile
+      - run: bun test orch watch-pr
+      - run: bun run typecheck

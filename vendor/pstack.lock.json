@@ -1,0 +1,945 @@
+{
+  "source": "https://github.com/paperclipai/poteto-stack",
+  "revision": "37d2ddde97aaef8017ccef811e682948f421062d",
+  "imported_on": "2026-10-10",
+  "directory": "vendor/pstack",
+  "strategy": "verbatim tracked-file snapshot; no nested Git repository, submodule, or subtree",
+  "files": {
+    ".github/workflows/validate.yml": {
+      "sha256": "06c2ba3fccc5ff4cd2a2a0f29520f9be3ca9ef0cb12404de3ebc7c2f77c382d8",
+      "executable": false
+    },
+    ".gitignore": {
+      "sha256": "be9003abca77747ad5ea213ed805e0ade05443b14a4ac9d8d88cd4693a033b50",
+      "executable": false
+    },
+    "LICENSE": {
+      "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+      "executable": false
+    },
+    "NOTICE.md": {
+      "sha256": "c2d295f81e5f19517dafb9fda5ddcd822be610275144048d4fd2ba25e57edd7c",
+      "executable": false
+    },
+    "README.md": {
+      "sha256": "7977320cfeafd5daa17c341b6adb6cc3c5caa97f353f6123825ac1ac2c263ff9",
+      "executable": false
+    },
+    "RUNTIME.md": {
+      "sha256": "7ff6234d87eb9c48d861fee9241fcf32c21b6a5e183209fd88b74c4375ea3177",
+      "executable": false
+    },
+    "UPSTREAM.md": {
+      "sha256": "a1d55c80a1e828d39db0ed95874c199ac7953c722c5f983909334a3ff35568e5",
+      "executable": false
+    },
+    "agents/comment-sicko.md": {
+      "sha256": "3e239e40b7b4b9beb2cf7f3ccc57f2388eb8b69bd1ba8ae888ef87ef6e0e2116",
+      "executable": false
+    },
+    "agents/poteto-agent.md": {
+      "sha256": "ef7b36b50a00645798eacbbce30f44d652e71caa22a92c11eb3cc3359e846dc3",
+      "executable": false
+    },
+    "assets/logo.png": {
+      "sha256": "672f6791589ef758b0ced2c4c477913fa2758623c438e265639a0d539ce90695",
+      "executable": false
+    },
+    "automations/benny/FOR_AGENTS.md": {
+      "sha256": "dd0bf658b9c08f056134317efc215c158b099170066bdf702c7d436683117e3f",
+      "executable": false
+    },
+    "automations/benny/README.md": {
+      "sha256": "4179ac7a6ea118db2f060b0150abe8bfd66f1e9530c12a59d154f0f12616cdf3",
+      "executable": false
+    },
+    "automations/benny/skills/reproduce-and-fix-issues/SKILL.md": {
+      "sha256": "f59df6e0d93391724d036408b2b4a5f9ef74010c9579979fa2765a7f0b54f9de",
+      "executable": false
+    },
+    "automations/benny/skills/reproduce-and-fix-issues/references/control-adapter.md": {
+      "sha256": "fe1269eba92522f40fc47c1b438711caf3401e4db158fb0e7265602ab6f757d7",
+      "executable": false
+    },
+    "automations/benny/skills/reproduce-and-fix-issues/references/feature-map.example.md": {
+      "sha256": "d8a80ef7795f2250b35f3fc74a9a7ace58f3e91040601ca241359a7f3c3b63ac",
+      "executable": false
+    },
+    "automations/benny/skills/reproduce-and-fix-issues/references/verify-existing-fix.md": {
+      "sha256": "c90eae00abcdec71a58fa8d60f2c495b082a526ad50b8e8e494837609129bf29",
+      "executable": false
+    },
+    "automations/benny/skills/setup-benny/SKILL.md": {
+      "sha256": "16829109d168a98b5457e66b6d856a88ba1a25929119c0588a2ef410861d5c99",
+      "executable": false
+    },
+    "automations/benny/skills/triage-issue-reports/SKILL.md": {
+      "sha256": "216a758b8711e64d19a55e6032c496527daac6364d010611040f3c04ef1a448f",
+      "executable": false
+    },
+    "automations/benny/skills/triage-issue-reports/references/routing.example.md": {
+      "sha256": "38ff6db831c78afe4063e7bc65da893fb743ada86b439ab791f94e6c9f80a670",
+      "executable": false
+    },
+    "automations/benny/templates/configuration.example.yaml": {
+      "sha256": "c7cb6c091c23475874a348b9514ab56ffbfacb7d8e9139a7a073a67d4346ca29",
+      "executable": false
+    },
+    "automations/benny/templates/reproduce-automation-prompt.md": {
+      "sha256": "fb714d5d3e27b3ad1f6f98243a56d6453d57e30c2d28b5904cb10f435b77dabf",
+      "executable": false
+    },
+    "automations/benny/templates/triage-automation-prompt.md": {
+      "sha256": "61f9f82b22164ae13755c7fd70424eb04c99f8c3d46a8b3074a6572a126585bd",
+      "executable": false
+    },
+    "docs/guide/01-setup.md": {
+      "sha256": "0b3375e1cc772314ae150c2072c3cd6c70dea78ccdbd6ccd97a0a697d3835452",
+      "executable": false
+    },
+    "docs/guide/02-poteto-mode.md": {
+      "sha256": "5019112365d501069f1825be315918c1a0904943587d37a251f360344de03e26",
+      "executable": false
+    },
+    "docs/guide/03-understand.md": {
+      "sha256": "0090afa9b8670adf175466a2a973ff4349e95ed67d2aa8cebdfc55ff4b7382c9",
+      "executable": false
+    },
+    "docs/guide/04-design.md": {
+      "sha256": "31f2abe6e9b29feafd1a9eece8f4fe21992f86b8c19ab2e9b5c11a20f36587e7",
+      "executable": false
+    },
+    "docs/guide/05-build-and-clean.md": {
+      "sha256": "f4358b62ad7500dc877546756e840a05caa302f217f0933be17200c84f99a656",
+      "executable": false
+    },
+    "docs/guide/06-verify-and-ship.md": {
+      "sha256": "c91c3c023af6f0bb2e5dafc078bcd3d8c7231634dbbb14e053ac2d05fac9f112",
+      "executable": false
+    },
+    "docs/guide/07-overnight.md": {
+      "sha256": "e1be2736b2f7cfb164ccf79a743d29725b7bac94890c8b00d762299dce605b4d",
+      "executable": false
+    },
+    "docs/guide/08-principles.md": {
+      "sha256": "73c3db659d356d4aa6d7674d30d0db46fab2bdd60152fca717c2d1772a042bdc",
+      "executable": false
+    },
+    "docs/guide/09-make-it-yours.md": {
+      "sha256": "e477853df960b5782cbe9efccdc76afda433182d70ffb1d05ea969e6bc8ab047",
+      "executable": false
+    },
+    "docs/guide/10-recipes-and-pitfalls.md": {
+      "sha256": "c652474764b08da4a6364d85f5d03cf1fc1cf35e9d7c549348fb66e2d09f7b1f",
+      "executable": false
+    },
+    "docs/guide/README.md": {
+      "sha256": "49d92cfe91e01c04bd1150e5b000ee4fd4dfda8ce789b66a9dda98f7e5456e00",
+      "executable": false
+    },
+    "docs/guide/images/design.jpg": {
+      "sha256": "b8ed07427f6a0c37dd8ba97961fc0eb5071efeee6c4a230648bdb7547f6f2a8f",
+      "executable": false
+    },
+    "docs/guide/images/overnight.jpg": {
+      "sha256": "4b4405e4df8925c5b3abbe702f681af0f3b1f5f32271b599f95717f578f1a0c8",
+      "executable": false
+    },
+    "docs/guide/images/recipes.jpg": {
+      "sha256": "9fa2d51b476635712737795ddef81806efaa0086bb3bfa9f9f45695d9ab0f8e8",
+      "executable": false
+    },
+    "docs/guide/images/router.jpg": {
+      "sha256": "525843055a4efd2b10acc50a8652fd02b0834ea733a8a2f895c1eb89036017da",
+      "executable": false
+    },
+    "docs/guide/images/understanding.jpg": {
+      "sha256": "b60587e9a9bbe2550e93be9819cf0cd4acf77d90fac769a0c43d82bd8e34e279",
+      "executable": false
+    },
+    "docs/guide/images/verification.jpg": {
+      "sha256": "2a76b52007a1cd2866ba67fd47d7d9ef3e1118bb5a09c4665eee8c3f161bd09a",
+      "executable": false
+    },
+    "metadata/licenses/cursor-team-kit.txt": {
+      "sha256": "702f5f331b56aff0e33d8c7826df5202559f894145eb70355c6477b55b5bb8a0",
+      "executable": false
+    },
+    "metadata/portability.json": {
+      "sha256": "aa22adece47ef157b3132ba7df7d50f2224ac898c5414b0581d1647f9bc1d504",
+      "executable": false
+    },
+    "metadata/upstream.json": {
+      "sha256": "9240ca5682b15193bbeb9432878c26e6f6bb9679370af4dacb5f16085bb4ab71",
+      "executable": false
+    },
+    "metadata/validation.md": {
+      "sha256": "2f668cd248df3e0df85619191ac0432397f1250fe79ba5d3d9734b518cded657",
+      "executable": false
+    },
+    "scripts/install.py": {
+      "sha256": "486c30cfac3965686c2bd1c639881d0f2d9038f03858fbdf56bea9f741244066",
+      "executable": true
+    },
+    "scripts/requirements-dev.txt": {
+      "sha256": "0969da99a0bc2a1b71ed50584560f4588a37567ac63af3ddbaf3c4617ca5621a",
+      "executable": false
+    },
+    "scripts/validate.py": {
+      "sha256": "ce31a087f06d10ce09030c3161b388947e51bf1675a110338824baac1a11737a",
+      "executable": false
+    },
+    "skills/architect/SKILL.md": {
+      "sha256": "723b56df76ae909811fae4e7cad2990d5132289fc5fc7e94a964b36639a7b9bb",
+      "executable": false
+    },
+    "skills/architect/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/architect/references/design-red-flags.md": {
+      "sha256": "d0e639e4cc588ec865f930d3a4111faad60987ae36925917e319d7ceca7c69ce",
+      "executable": false
+    },
+    "skills/architect/references/rationale-template.md": {
+      "sha256": "0cedfccdc7b47fc881febd5a8293eecbc542c20f8df825639904a8102d2eb5d3",
+      "executable": false
+    },
+    "skills/architect/references/runner-prompt.md": {
+      "sha256": "21dd5314aab778c5007228027a4591d97693fbec6ab86524037772b63f40948e",
+      "executable": false
+    },
+    "skills/arena/SKILL.md": {
+      "sha256": "348b95c1f0a0dc10a48aa2fa620ac655d3ef0579618829e8ac9376d38d0788bf",
+      "executable": false
+    },
+    "skills/arena/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/automate/SKILL.md": {
+      "sha256": "78fbe573d76c662f80ba415d410513dfe6cfe1c1ff088d3dc1394667c56549f6",
+      "executable": false
+    },
+    "skills/automate-me/SKILL.md": {
+      "sha256": "0ed4ccb6c2e6568cb7d06b8236d47714e43845131f0daf7b466c1c28a12cfadd",
+      "executable": false
+    },
+    "skills/automate-me/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/benchmark-checklist/SKILL.md": {
+      "sha256": "6a767e788a60428fa14e645ee10fe2e49896e514ff654f668b1d824deb9038e8",
+      "executable": false
+    },
+    "skills/benchmark-checklist/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/blast-radius/SKILL.md": {
+      "sha256": "2e10745b97f5862323dcda3b29ca60d56b5c3c98e37020085d26b48efbe0a436",
+      "executable": false
+    },
+    "skills/blast-radius/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/bro/SKILL.md": {
+      "sha256": "aa329d0ceeeecb6822a7174ad76bb07a7826a3c52ceb6a588dec4138815084bb",
+      "executable": false
+    },
+    "skills/bro/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/control-cli/SKILL.md": {
+      "sha256": "13ac93e595bbda2000849bdb815d5f2ca03f7c2ca63788c8335f9212b9b422a2",
+      "executable": false
+    },
+    "skills/control-ui/SKILL.md": {
+      "sha256": "410cae25bdb1e5d2323b126abc5047b0213be7fdb0195710213fa8de8a751871",
+      "executable": false
+    },
+    "skills/correct/SKILL.md": {
+      "sha256": "bf482bacc972b3f124a4af8bf9364b4b3e280cb5845e44c326ea4f4565e5c904",
+      "executable": false
+    },
+    "skills/correct/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/create-skill/SKILL.md": {
+      "sha256": "788d1d5383013d6a72028bfc9ad451705630a3b7accfbbd9adcf831f03b43bc0",
+      "executable": false
+    },
+    "skills/create-verification-skill/SKILL.md": {
+      "sha256": "fb0c07d8b7584510255a70b5d633c20a2a36a38151f6fadcd72ad5ae6d21d672",
+      "executable": false
+    },
+    "skills/create-verification-skill/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/create-verification-skill/references/feature-map-example/README.md": {
+      "sha256": "cb7bd782cf89968a4ba3d58a5151db837430db92d19a6f52a906973b77b516ba",
+      "executable": false
+    },
+    "skills/create-verification-skill/references/feature-map-example/create-note.md": {
+      "sha256": "644a44c74f35d38c2feb7cd05a0121fdebbb623e8dc376c185b565a581d1ccf7",
+      "executable": false
+    },
+    "skills/create-verification-skill/references/feature-map-example/search.md": {
+      "sha256": "6e87b9e7f2791a7776ba1bb83f371cd285c306c67f19d245cc4dd6ca3015c823",
+      "executable": false
+    },
+    "skills/deslop/SKILL.md": {
+      "sha256": "2f7b7def74af7ed11f5b44b4d32f0f91fca8c5d1f92bf2171e8d12fd33a0f810",
+      "executable": false
+    },
+    "skills/figure-it-out/SKILL.md": {
+      "sha256": "0eb9485f0e7d84fee56b5d0f0af0faf4635e3ca87c8cba3970c01293b76ecc19",
+      "executable": false
+    },
+    "skills/figure-it-out/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/how/SKILL.md": {
+      "sha256": "ee218052670f76b3dcd49b233a1ba66422c847cf7868a4353ea48a82c72d07c1",
+      "executable": false
+    },
+    "skills/how/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/how/references/explainer-prompt.md": {
+      "sha256": "ddb89cebefc24e2b54517a331aedfe045b6971e101f45c71b8cef4cccff45bff",
+      "executable": false
+    },
+    "skills/how/references/explorer-prompt.md": {
+      "sha256": "a3b44a6e5bb16a6d4d1cac19db8ed5322ffd5f5f5d45baca4e73990ca096f8be",
+      "executable": false
+    },
+    "skills/interrogate/SKILL.md": {
+      "sha256": "b8e613b3185f060e63a8a1f19cee1b2f8623dd1c1fe7ad97a73612540bc73255",
+      "executable": false
+    },
+    "skills/interrogate/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/interrogate/references/code-quality-review.md": {
+      "sha256": "79162fda183eafd40d51661fbb5e151c7ba250f89e506ba17f5bd135dcbd50a8",
+      "executable": false
+    },
+    "skills/interrogate/references/lead-judgment.md": {
+      "sha256": "6e5bdf5670eb34017692e9b6c546f36ac7552e6bb9f3f2f3429164fcc46a9361",
+      "executable": false
+    },
+    "skills/interrogate/references/reviewer-prompt.md": {
+      "sha256": "e0598e254792b56de39bb16b1e6db559b03a522fdc54b98f942d254090920ae6",
+      "executable": false
+    },
+    "skills/interrogate/references/rubric.md": {
+      "sha256": "a85aa801abbaf14434f00579440abc0d8e2723227ba8bf57de7cca8d6e7d2f25",
+      "executable": false
+    },
+    "skills/loop/SKILL.md": {
+      "sha256": "c1c282dabf7633afa9723df77185bf8c86dd06afd62196a6bd4f1f815f0cf8d5",
+      "executable": false
+    },
+    "skills/maintain-verification-skill/SKILL.md": {
+      "sha256": "667adaf0b7e924f657c48ec77394b0cf58f081087c1a5e914c818f4c9fb20ed5",
+      "executable": false
+    },
+    "skills/maintain-verification-skill/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/make-bot-ui/SKILL.md": {
+      "sha256": "54c38f537cb25feaff4a23b6a2110f47548b6e4ee134e8bdb1794290b0a1f1f1",
+      "executable": false
+    },
+    "skills/make-bot-ui/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/no-comments/SKILL.md": {
+      "sha256": "36b7d409d5c009bc92470e58dd2de2bfcd75c36c04e21a156c30c945e8c59304",
+      "executable": false
+    },
+    "skills/no-comments/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/poteto-help/SKILL.md": {
+      "sha256": "0e5c04e3f151ea6d6ad8bdd8e8200af299d7756cb04de21cb67858b239bb7af5",
+      "executable": false
+    },
+    "skills/poteto-help/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/poteto-help/references/prompting.md": {
+      "sha256": "463f450c44a60afd001a2f69fdf8a5dea174351f339369b12ec3c41515e564d3",
+      "executable": false
+    },
+    "skills/poteto-help/references/recipes.md": {
+      "sha256": "1872323419a3e5c7783b1933f7a180ca26c25a6e1f4ec83bd65e091ebbfb812b",
+      "executable": false
+    },
+    "skills/poteto-mode/SKILL.md": {
+      "sha256": "3c1ab05ca8ba4630a20f069c84e38f6642176a2d9d6d6c16c8ffac2e7eb52825",
+      "executable": false
+    },
+    "skills/poteto-mode/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/poteto-mode/playbooks/authoring-a-skill.md": {
+      "sha256": "b9ec94bda15dad6ac054b1f86cda8040d9e668e7de040fedb53223092f5a5a1a",
+      "executable": false
+    },
+    "skills/poteto-mode/playbooks/autonomous-run.md": {
+      "sha256": "a3c3feb14019d930d3f88393329595196f2a6cf6030cbbf983b89f272728058a",
+      "executable": false
+    },
+    "skills/poteto-mode/playbooks/autopilot-full.md": {
+      "sha256": "9fc3d72bc72c8a9aa47f564f231dfc3b9cd14a6c36ab723e73e131cb79a9f4bd",
+      "executable": false
+    },
+    "skills/poteto-mode/playbooks/autopilot-stack.md": {
+      "sha256": "92bf60b0ff9a0016866949d4e25a6b8b70772116b4c3a4df61a4b775224121d2",
+      "executable": false
+    },
+    "skills/poteto-mode/playbooks/babysit.md": {
+      "sha256": "ed6e40a93502fa9e90ff93e2fd5e95582a61bbee176c01d7fe3c06b90ddbf567",
+      "executable": false
+    },
+    "skills/poteto-mode/playbooks/bug-fix.md": {
+      "sha256": "27ae75c781c92df95bd30996c45c31471a5a40c5ed8ee777a822c825f8b269ea",
+      "executable": false
+    },
+    "skills/poteto-mode/playbooks/eval.md": {
+      "sha256": "824fcc4804158a515717b8672b77c84d82598d31b834fae478559b917fea044b",
+      "executable": false
+    },
+    "skills/poteto-mode/playbooks/feature.md": {
+      "sha256": "a7b7569f4e394fbb4c6bc2d7088a92bbe9f843fb6070046bf6997a0bbf6f77ff",
+      "executable": false
+    },
+    "skills/poteto-mode/playbooks/hillclimb.md": {
+      "sha256": "2809ba9582831ce505bd2ae717882125ba5261c01d63aee612d01629cc7508bc",
+      "executable": false
+    },
+    "skills/poteto-mode/playbooks/investigation.md": {
+      "sha256": "dc66bcf6af3a074fc7f67aa5e12b93ef571a4fb4d8e17f2f1af5ae5359f42e46",
+      "executable": false
+    },
+    "skills/poteto-mode/playbooks/multi-phase-plan.md": {
+      "sha256": "77462b309ce5124a85c0b06744347faa9ec809c97d2dcaa944e5889b916f3839",
+      "executable": false
+    },
+    "skills/poteto-mode/playbooks/opening-a-pr.md": {
+      "sha256": "7ef5be70e8f7b7fb26ba7996ccb15972c982e6d0dba176ad0ee73d93d81da4c6",
+      "executable": false
+    },
+    "skills/poteto-mode/playbooks/orchestrate.md": {
+      "sha256": "a7a83f8798bb0d101878b176577f2dde12d42e98eadaa2cd6a6d20b9a121c79d",
+      "executable": false
+    },
+    "skills/poteto-mode/playbooks/pause-safely.md": {
+      "sha256": "77968cfe5f4a71a8cd33e0ae8ffcdbd88dd693a212c240457773e6c40c96c21d",
+      "executable": false
+    },
+    "skills/poteto-mode/playbooks/perf-issue.md": {
+      "sha256": "ac82cb3043677729d62f4f2110546e893353bab9fc5f729fdf9891945795f8d9",
+      "executable": false
+    },
+    "skills/poteto-mode/playbooks/prototype.md": {
+      "sha256": "7aa1f52c691c3d46d5afc527b23f90977fce869ce33573c73c81a4c7f0cde962",
+      "executable": false
+    },
+    "skills/poteto-mode/playbooks/refactoring.md": {
+      "sha256": "07aa5495b00c1711318557929bba360cad7b77b1e4f56e52d21d51936e3b1f6f",
+      "executable": false
+    },
+    "skills/poteto-mode/playbooks/runtime-forensics.md": {
+      "sha256": "594f02c40c243a346e1f57b688ecf2ed5e882f21b3d24ed2204d1ac6f1c24a8a",
+      "executable": false
+    },
+    "skills/poteto-mode/playbooks/session-pickup.md": {
+      "sha256": "48d5761f5ea41445718909c65dbfdec840994b250cc10e9b8c270359ff1b3981",
+      "executable": false
+    },
+    "skills/poteto-mode/playbooks/shipping.md": {
+      "sha256": "1009c35a204d5e7807903b866daed30f4bbc05f458d55fcccd92c2d7a5ea222d",
+      "executable": false
+    },
+    "skills/poteto-mode/playbooks/trace-forensics.md": {
+      "sha256": "137ce3984fb96e45971fdff4d3c79fa4ccc647c5b30ae4945783b9fb23f8cec7",
+      "executable": false
+    },
+    "skills/poteto-mode/playbooks/visual-parity.md": {
+      "sha256": "950ca51999a6454c98eee6bcbc3d1bbe501a4e3a5d5439b6f6ddc378991b256c",
+      "executable": false
+    },
+    "skills/poteto-mode/playbooks/worktree-cleanup.md": {
+      "sha256": "5064ed7acd420dd3d74338b711bf1bfc35661b23375f72df5350ff2e5efde18f",
+      "executable": false
+    },
+    "skills/poteto-mode/references/bugbot-triage.md": {
+      "sha256": "b2d146c770d8d3593e1ef3d77b668039b8e1f78093ea1a86f1d45d7f99614309",
+      "executable": false
+    },
+    "skills/poteto-mode/scripts/bootstrap.ts": {
+      "sha256": "ccd2ed08fd9da9d0d942e5f2491cfc74bb92d8a08fa51755e0da1ac8de287361",
+      "executable": false
+    },
+    "skills/poteto-mode/scripts/bun.lock": {
+      "sha256": "6945b97fea814e4256f7af06c2280a854086ae3d0bc27d25a240f6b9290dc9d2",
+      "executable": false
+    },
+    "skills/poteto-mode/scripts/check-plan.mjs": {
+      "sha256": "4f9432d9989880b6afc2bdda503d5b12a9d07d357ecf31936b7ab5e83bc80523",
+      "executable": true
+    },
+    "skills/poteto-mode/scripts/orch/orch.test.ts": {
+      "sha256": "773153ac74de6eb15f58d2682f487f5f30672d7efe3ef1d24a131aa9129d279b",
+      "executable": false
+    },
+    "skills/poteto-mode/scripts/orch/orch.ts": {
+      "sha256": "f091687df627a0b75fabd54af58945a9cd6c7039ef0622012ac9ed60cd8ec434",
+      "executable": true
+    },
+    "skills/poteto-mode/scripts/orch/store.ts": {
+      "sha256": "0eae7cf69282e827b1227166f2e32cee3560f2f3e65b3f1f2faf6fb83d3b4c5b",
+      "executable": false
+    },
+    "skills/poteto-mode/scripts/package.json": {
+      "sha256": "87a6c8c28472ad25eecb5234b09e4aa67feb9b8c18831e7bcd1ce3652c150993",
+      "executable": false
+    },
+    "skills/poteto-mode/scripts/watch-pr/cli.test.ts": {
+      "sha256": "a35592b4c6da96caf8d47987e9cd503fab6c7774ab87d11a43f24b4b5df2a9d1",
+      "executable": false
+    },
+    "skills/poteto-mode/scripts/watch-pr/cli.ts": {
+      "sha256": "89c08863089181a232be782c4b2ed90a1552f44aeecb0dcb7aac2c623620e680",
+      "executable": false
+    },
+    "skills/poteto-mode/scripts/watch-pr/fakes.test-helper.ts": {
+      "sha256": "e53e31b7f03068063f53a99a3591b052aaed66e4e2b196b3a364980f60324ab1",
+      "executable": false
+    },
+    "skills/poteto-mode/scripts/watch-pr/github.test.ts": {
+      "sha256": "0cbce011050522938523e36bb42a260e92b812dcd2076930fa681672ad316b24",
+      "executable": false
+    },
+    "skills/poteto-mode/scripts/watch-pr/github.ts": {
+      "sha256": "d1bbbafbe8e2c703c84da2029de7f2c4011412512f8cf65a42100f46bcb92c8a",
+      "executable": false
+    },
+    "skills/poteto-mode/scripts/watch-pr/policy.test.ts": {
+      "sha256": "a9fedb25feefd1f57ef6a662f80c99018690170a3a8070773a08eaf694d1d3d9",
+      "executable": false
+    },
+    "skills/poteto-mode/scripts/watch-pr/policy.ts": {
+      "sha256": "68d240505852cf23c9b2dea463342e9e61243f486b3cc86c735d140f9ee7be49",
+      "executable": false
+    },
+    "skills/poteto-mode/scripts/watch-pr/render.ts": {
+      "sha256": "2b709e86628d5b8fdb61f860e60ababc342b0626c67576305442cf548283a604",
+      "executable": false
+    },
+    "skills/poteto-mode/scripts/watch-pr/tsconfig.json": {
+      "sha256": "1ecccc72320b086c63ce3f73c959896fd747363e63553b3b1136296ea4069e45",
+      "executable": false
+    },
+    "skills/poteto-mode/scripts/watch-pr/types.compile.ts": {
+      "sha256": "621af4c9a664fbf699a9737efccdc248abb416df8819c9dc5f824beae2b9b1d6",
+      "executable": false
+    },
+    "skills/poteto-mode/scripts/watch-pr/types.ts": {
+      "sha256": "64ba6221e3bfe61bbb292337d199cdec6309455477280efb060203dba34e0e91",
+      "executable": false
+    },
+    "skills/poteto-mode/scripts/watch-pr/watch-pr": {
+      "sha256": "d955603be6cc0e8b8ffcec722f635192b2261410b1f2929abea94480e47eb5d4",
+      "executable": true
+    },
+    "skills/poteto-mode/scripts/worktree-audit.sh": {
+      "sha256": "c87d7a677e5aafad8121146e32f8b69a89bd016fdee98ea27e8ae1ba58be4715",
+      "executable": true
+    },
+    "skills/principle-attack-the-premise/SKILL.md": {
+      "sha256": "c87bd7536f772f8a403ad8155535ee17a1bbec9a353156693eb3bb1520c87ae3",
+      "executable": false
+    },
+    "skills/principle-attack-the-premise/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/principle-boundary-discipline/SKILL.md": {
+      "sha256": "62ac2862c2caa22dd14531f51c9c6bb445ceb198ca98a687e25b4d47c1f10a28",
+      "executable": false
+    },
+    "skills/principle-boundary-discipline/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/principle-build-the-lever/SKILL.md": {
+      "sha256": "458b269eab8e95a1573276955312f7d2a13ae8599879a9efc748248f6bc34b56",
+      "executable": false
+    },
+    "skills/principle-build-the-lever/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/principle-encode-lessons-in-structure/SKILL.md": {
+      "sha256": "77044c83a9ac6df78fc643887ea5f1f11f082adaf14b717c060cdaed03cce863",
+      "executable": false
+    },
+    "skills/principle-encode-lessons-in-structure/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/principle-exhaust-the-design-space/SKILL.md": {
+      "sha256": "8583310d7297b7823d75494faa57b003564d436807febecdecbd8321abe5cf6e",
+      "executable": false
+    },
+    "skills/principle-exhaust-the-design-space/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/principle-experience-first/SKILL.md": {
+      "sha256": "58903529d733b1c1a7c9ccf127d45ef3c7d0d9f0b81164a4dc6b80efe6f2912b",
+      "executable": false
+    },
+    "skills/principle-experience-first/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/principle-explain-the-number/SKILL.md": {
+      "sha256": "5aac99e7ce0bb1b37e2579acf4fe88c32a1456d9d46afd4a57cfe1df9092e89c",
+      "executable": false
+    },
+    "skills/principle-explain-the-number/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/principle-fix-root-causes/SKILL.md": {
+      "sha256": "ba4cd38da1dcc8fe5432feb64457cba95594736a9b21b2ebf8f8c52aee068707",
+      "executable": false
+    },
+    "skills/principle-fix-root-causes/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/principle-foundational-thinking/SKILL.md": {
+      "sha256": "864b827e8199d946ce58beca0f89c4ed4099ed6e426fb698a3aaa45de2a9eea2",
+      "executable": false
+    },
+    "skills/principle-foundational-thinking/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/principle-guard-the-context-window/SKILL.md": {
+      "sha256": "d2cef147862576e3d709b7afc149d85196245e8338b9c7eef337c95fba412b3e",
+      "executable": false
+    },
+    "skills/principle-guard-the-context-window/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/principle-laziness-protocol/SKILL.md": {
+      "sha256": "9006579e9e3f33955d17569733db688ae65f22577dc3b21803d219a5a8445aff",
+      "executable": false
+    },
+    "skills/principle-laziness-protocol/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/principle-make-operations-idempotent/SKILL.md": {
+      "sha256": "540738217c3da7bf513b9886924ad6a2bc77e58be867f5bd2e1831c74bf2ce70",
+      "executable": false
+    },
+    "skills/principle-make-operations-idempotent/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md": {
+      "sha256": "09978915a4a11990cf0a9a02d9c08cc59e0b7a04c5c24b83aa560fbe4146f75b",
+      "executable": false
+    },
+    "skills/principle-migrate-callers-then-delete-legacy-apis/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/principle-minimize-reader-load/SKILL.md": {
+      "sha256": "42551c5dc74cd578163c148da552db3ff67d29b78600ef216bfd311fb828fe69",
+      "executable": false
+    },
+    "skills/principle-minimize-reader-load/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/principle-model-the-domain/SKILL.md": {
+      "sha256": "bbadbb9a723fac3f76e782ae45665eb94058ec10993e4bae36d4dc6b0e4eac07",
+      "executable": false
+    },
+    "skills/principle-model-the-domain/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/principle-never-block-on-the-human/SKILL.md": {
+      "sha256": "f2764bb9338cbfc788c903cf4b9cd0a5f4042d3a04dd6d59cbd525d9beaadd0a",
+      "executable": false
+    },
+    "skills/principle-never-block-on-the-human/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/principle-outcome-oriented-execution/SKILL.md": {
+      "sha256": "10eb91633aa570355ba4bb37088fcade2b22e498df7a58edc749e65bc5a78e2d",
+      "executable": false
+    },
+    "skills/principle-outcome-oriented-execution/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/principle-prove-it-works/SKILL.md": {
+      "sha256": "ec79a15025bac8d33d62011c54f3b612733fd2a024e623b531b3637aa75070e2",
+      "executable": false
+    },
+    "skills/principle-prove-it-works/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/principle-redesign-from-first-principles/SKILL.md": {
+      "sha256": "a1c7fd0a96b40e12a74bceb0e6bb20a9666dd844dcabfb624acb27da23b929fe",
+      "executable": false
+    },
+    "skills/principle-redesign-from-first-principles/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/principle-separate-before-serializing-shared-state/SKILL.md": {
+      "sha256": "05294b40448e927c5da1c7b6f5c6b9fed3744637e3833d2d948b9154a9dd00bb",
+      "executable": false
+    },
+    "skills/principle-separate-before-serializing-shared-state/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/principle-sequence-verifiable-units/SKILL.md": {
+      "sha256": "2ccbbacc56ace5afdfb8670cef19d7bd009fb2a0033b9a741cbdf2b6baf72187",
+      "executable": false
+    },
+    "skills/principle-sequence-verifiable-units/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/principle-subtract-before-you-add/SKILL.md": {
+      "sha256": "a983a50e732c1ed315eba7aaf47a61329e31c4794eb1ab9d25d9945265b31e03",
+      "executable": false
+    },
+    "skills/principle-subtract-before-you-add/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/principle-test-behavior-not-implementation/SKILL.md": {
+      "sha256": "87e40efe4e486f7ea639d2ed1fc0abe6c93b8fd0e89a81218086909d2470a52e",
+      "executable": false
+    },
+    "skills/principle-test-behavior-not-implementation/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/principle-type-system-discipline/SKILL.md": {
+      "sha256": "c83da8031ffb4c86410030d3e261f659598fca2b7d8158fd9dc269d70a3a025e",
+      "executable": false
+    },
+    "skills/principle-type-system-discipline/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/recall/SKILL.md": {
+      "sha256": "3e885248d4d296f9fe832774fcf914e9a3f39cdf50c74808887456f8faf1c6a0",
+      "executable": false
+    },
+    "skills/recall/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/reflect/SKILL.md": {
+      "sha256": "18ec2c97e2677cf759614f8441556193bfc0ce0daeb6a458da0603a1e64d0159",
+      "executable": false
+    },
+    "skills/reflect/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/reflect/references/divergent-reviewer.md": {
+      "sha256": "796f11ae5edf992528b41b0f6b89d363a1549619486545c2a2a580debb1e5720",
+      "executable": false
+    },
+    "skills/reflect/references/judgment-reviewer.md": {
+      "sha256": "4d53bb84ce0e3adb8b1dcd3927f1acbbdb8bebc9974f4c7495f89a257d79fdc0",
+      "executable": false
+    },
+    "skills/reflect/references/synthesizer.md": {
+      "sha256": "2f76c847eb45b182dc6fbcbf7d96c8ee7e2986ecfd9e0d640fec44e3cc5a617c",
+      "executable": false
+    },
+    "skills/reflect/references/tooling-reviewer.md": {
+      "sha256": "be27308956f8b348ddb56619105322608d08717889b9fd6ef129561d306429ce",
+      "executable": false
+    },
+    "skills/runtime/SKILL.md": {
+      "sha256": "fc8de5c98c96ab5b4c3ff5e50192056b0c23c9d32213040f680c37708ce966a5",
+      "executable": false
+    },
+    "skills/setup-pstack/SKILL.md": {
+      "sha256": "13779b37446c7ecc9bc5366d9465cdb7bcb9e3a5ca2a3dc848a5656e3efe95af",
+      "executable": false
+    },
+    "skills/show-me-your-work/SKILL.md": {
+      "sha256": "1d3b23ce11da439e3f847dc0e42e5e68c19b37e42c594f001dfd5a9382a8c96b",
+      "executable": false
+    },
+    "skills/show-me-your-work/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/show-me-your-work/references/decision-log-template.tsv": {
+      "sha256": "6779378006a2f5225e8c06deb84f1d913fb532041ebbb6e50d94600bfe3f4b76",
+      "executable": false
+    },
+    "skills/show-me-your-work/scripts/log.sh": {
+      "sha256": "a65a4bc5fb7cdeadbdb7b7ff1ca4682f4d9c42420942b2977cd17b46c4ac338e",
+      "executable": true
+    },
+    "skills/swarm/SKILL.md": {
+      "sha256": "51ad32ff2a52e5ea747f1e1e5ad4b3f13bca2c3b4064415e3d9a5a2a46ae5eab",
+      "executable": false
+    },
+    "skills/swarm/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/tdd/SKILL.md": {
+      "sha256": "eeb868e2dfebee528d730a67d7b17498fac4bb85dec2e38bc5c5176aca4d5d2f",
+      "executable": false
+    },
+    "skills/tdd/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/teach/SKILL.md": {
+      "sha256": "bd286e5a6290673be2cd28aef7af2ec7f1fb138e6bce156ea657368c7e7fc8a4",
+      "executable": false
+    },
+    "skills/teach/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/technical-writing/SKILL.md": {
+      "sha256": "f5c512ffeec70bc4e0dee50f7bb4c26742e1be77967a6e8b15d1921e1c209ceb",
+      "executable": false
+    },
+    "skills/technical-writing/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/typescript-best-practices/SKILL.md": {
+      "sha256": "a40da091ebac92080cf0ed142051d2bef35e56358084511d599f1097c58f5c73",
+      "executable": false
+    },
+    "skills/typescript-best-practices/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/typescript-best-practices/references/patterns.md": {
+      "sha256": "faa1362055374452efccac1b629677c61acfb0bcc6c4e3311836b5715638ee18",
+      "executable": false
+    },
+    "skills/unslop/SKILL.md": {
+      "sha256": "195411d320b5b328f9f642baf59757ed19aaf0931c0838740e0aca273d538dc1",
+      "executable": false
+    },
+    "skills/unslop/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/verify-this/SKILL.md": {
+      "sha256": "c1c7b27c1133085bd3409c601ea12b6e6f61b4b23debcd52bc248fc01907e7de",
+      "executable": false
+    },
+    "skills/why/SKILL.md": {
+      "sha256": "96e82a5cf9e69212255ebfbc5b0672ebcfad8e759e57309322640a35c930a4a4",
+      "executable": false
+    },
+    "skills/why/agents/openai.yaml": {
+      "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+      "executable": false
+    },
+    "skills/why/references/epistemics.md": {
+      "sha256": "fcc0f559c072832c869a5ada72434b4849320a637ae63c09e8ee14f7ad787059",
+      "executable": false
+    },
+    "skills/why/references/investigator-prompt.md": {
+      "sha256": "6892956a7ab0b5ee6c4babaf4f793703abe89b350ea7cb9463b4a56eea1c8266",
+      "executable": false
+    },
+    "skills/why/references/source-playbook.md": {
+      "sha256": "9ae9dcb9d09111c9facc68510331c5aba4aed9b1b057314ff1fc0e166ad3993a",
+      "executable": false
+    },
+    "skills/why/references/sources/code-archaeology.md": {
+      "sha256": "8c14aa382f0de40829b2668d43e3f54814480bb93a486c9282ada4003f6b9dbd",
+      "executable": false
+    },
+    "skills/why/references/sources/databricks.md": {
+      "sha256": "236ede7aab6454662a992db088a5393537a5233a4c26719c93188f9e174488f6",
+      "executable": false
+    },
+    "skills/why/references/sources/datadog.md": {
+      "sha256": "ebe9c07bac28e47757ee7f16fb93b0c01d427a08c501957d047f395a2f37b7e7",
+      "executable": false
+    },
+    "skills/why/references/sources/incident-postmortem.md": {
+      "sha256": "a899470f05f86029630a13a2696491cc708ca7b56a6e822a69ff6e954d6ff8cf",
+      "executable": false
+    },
+    "skills/why/references/sources/linear.md": {
+      "sha256": "01304e7f1badfcfb78babbb0edcadeb3cc8dd3f713793420cdff24ba190f907c",
+      "executable": false
+    },
+    "skills/why/references/sources/notion.md": {
+      "sha256": "3bcfa695c49dfad4ac036d5d7181c12585f55ac04f1936198d16ab75a2788997",
+      "executable": false
+    },
+    "skills/why/references/sources/sentry.md": {
+      "sha256": "6f292bc4fb1548e956f95e1900b9481abf5134254419f1cd9edec95428c82d73",
+      "executable": false
+    },
+    "skills/why/references/sources/slack.md": {
+      "sha256": "58fee61d024b3700b407e7acbed367944720ff05adfddb6954d36c88368f3ba7",
+      "executable": false
+    },
+    "skills/why/references/synthesizer-prompt.md": {
+      "sha256": "733a3e9cf897b1aca56aaddeae01a3832e4bfed024c2f602db2d1bf807d7a73b",
+      "executable": false
+    },
+    "tests/test_install.py": {
+      "sha256": "b43610530c45d24bcdb7e1ad5757855c55e309ff06c0e1d2b1c61ad3689f215d",
+      "executable": false
+    },
+    "tests/test_worktree_audit.py": {
+      "sha256": "c5ee7fe772bc7f9185de14f19137a3b0d53d4648a690e264e7dbe71335280fde",
+      "executable": false
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "dstack",
+  "version": "0.1.0",
+  "description": "Dotta\u2019s personal skills and agent workflows.",
+  "author": {
+    "name": "Dotta"
+  },
+  "skills": "./skills/"
+}

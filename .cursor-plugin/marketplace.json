@@ -1,0 +1,16 @@
+{
+  "name": "dotta-agent-plugins",
+  "owner": {
+    "name": "Dotta"
+  },
+  "plugins": [
+    {
+      "name": "dstack",
+      "source": "./dstack",
+      "description": "Dotta\u2019s personal skills and agent workflows."
+    }
+  ],
+  "metadata": {
+    "description": "Dotta's personal agent plugins."
+  }
+}
