@@ -5,8 +5,8 @@
   },
   "plugins": [
     {
-      "name": "dstack",
-      "source": "./dstack",
+      "name": "dottastack",
+      "source": "./dottastack",
       "description": "Dotta\u2019s personal skills and agent workflows."
     }
   ],

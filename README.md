@@ -1,7 +1,7 @@
 # Agent plugins
 
 Dotta's personal agent library, maintained in Git and used directly from the
-checkout. `dstack` holds original skills and workflows; `vendor` holds imported
+checkout. `dottastack` holds original skills and workflows; `vendor` holds imported
 packages with their attribution and provenance intact. The public repository is
 [paperclipai/agent-plugins](https://github.com/paperclipai/agent-plugins).
 
@@ -12,11 +12,12 @@ constraint. See [compatibility](docs/compatibility.md) for the boundaries.
 
 ```text
 agent-plugins/
-├── dstack/
+├── dottastack/
 │   ├── plugin.json                 # Agent Plugins portable manifest
 │   ├── .cursor-plugin/plugin.json  # Cursor packaging
 │   ├── .claude-plugin/plugin.json  # Claude packaging
 │   └── skills/
+│       ├── blameless-root-cause/
 │       ├── dotta-ui-ux/
 │       ├── goal-poteto-style-definition/
 │       └── trees-maps-theorems/
@@ -27,10 +28,15 @@ agent-plugins/
 └── scripts/
 ```
 
-`dstack` can grow agents, hooks, commands, and MCP integrations when there is a
-real use for them. It currently contains three skills.
-The root Cursor and Claude catalogs expose `dstack`; the preserved pstack port
+`dottastack` can grow agents, hooks, commands, and MCP integrations when there is a
+real use for them. It currently contains four skills.
+The root Cursor and Claude catalogs expose `dottastack`; the preserved pstack port
 uses its own installer and is not advertised as a native plugin.
+
+[Blameless root cause](dottastack/skills/blameless-root-cause/SKILL.md) traces a
+defect through code, PRs, and accessible development sessions to explain why it
+was introduced and accepted, then routes reusable lessons into guidance or
+executable safeguards. Its worked example is fictional.
 
 ## Use the checkout every day
 
@@ -41,7 +47,7 @@ again. Start a fresh session if the agent has cached an older skill.
 From this repository:
 
 ```sh
-# Preview, then expose dstack skills to a selected agent.
+# Preview, then expose dottastack skills to a selected agent.
 python3 scripts/install.py --agent codex --dry-run
 python3 scripts/install.py --agent codex
 # Optional: --agent claude-code or --agent cursor; repeat --agent for several.
@@ -53,7 +59,7 @@ to this checkout. Matching legacy links in `~/.codex/skills` and `~/.cursor/skil
 are removed only after the shared registration is available. Different files or
 targets cause a preflight conflict; unrelated entries are preserved.
 
-It installs skills only. Do not also install dstack as a native plugin in the
+It installs skills only. Do not also install dottastack as a native plugin in the
 same agent unless you intend to have both registrations. Pstack's installer below
 also links Codex skills into `~/.agents/skills` from this vendored checkout.
 

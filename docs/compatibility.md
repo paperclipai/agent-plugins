@@ -14,13 +14,13 @@ Source documentation was checked on 2026-10-10.
 
 | Target | Approach in this repo | Boundary |
 | --- | --- | --- |
-| Cursor | `dstack/.cursor-plugin/plugin.json` and the root marketplace catalog | Preferred place to add useful agents, rules, commands, hooks, or variables; adapt them for other hosts when worthwhile. |
-| Agent Plugins | `dstack/plugin.json`, standard `skills/<name>/SKILL.md` layout | Portable skills and optional MCP configuration; not a universal agents/hooks runtime. |
-| Claude Code / Cowork | `dstack/.claude-plugin/plugin.json` and the root Claude catalog | Shared content, with host-specific configuration when needed. Code and Cowork can differ too. |
-| Codex | Individual discovery symlinks into `dstack/skills` | Use `~/.agents/skills` with symlink targets in this checkout; migrate matching legacy `.codex` links. |
-| Vercel skills CLI | Give it `./dstack` as a local package | Skill discovery/installation only; do not assume it installs agents, hooks, or MCP configuration. |
+| Cursor | `dottastack/.cursor-plugin/plugin.json` and the root marketplace catalog | Preferred place to add useful agents, rules, commands, hooks, or variables; adapt them for other hosts when worthwhile. |
+| Agent Plugins | `dottastack/plugin.json`, standard `skills/<name>/SKILL.md` layout | Portable skills and optional MCP configuration; not a universal agents/hooks runtime. |
+| Claude Code / Cowork | `dottastack/.claude-plugin/plugin.json` and the root Claude catalog | Shared content, with host-specific configuration when needed. Code and Cowork can differ too. |
+| Codex | Individual discovery symlinks into `dottastack/skills` | Use `~/.agents/skills` with symlink targets in this checkout; migrate matching legacy `.codex` links. |
+| Vercel skills CLI | Give it `./dottastack` as a local package | Skill discovery/installation only; do not assume it installs agents, hooks, or MCP configuration. |
 
-The manifests describe the same dstack content. A root Agent Plugins manifest
+The manifests describe the same dottastack content. A root Agent Plugins manifest
 and native manifests coexist as authoring artifacts; selection and loading can
 vary by client version. A future host-specific export can omit other manifests
 if needed. Keep identifiers and versions consistent across the three manifests.
@@ -59,17 +59,17 @@ relying on an old absolute discovery path.
 Vercel's CLI is useful for consuming skills from this package:
 
 ```sh
-npx skills add ./dstack --list
+npx skills add ./dottastack --list
 # Optional install, after choosing this instead of direct authoring links:
-npx skills add ./dstack -g -a codex claude-code cursor
+npx skills add ./dottastack -g -a codex claude-code cursor
 ```
 
 Its symlink mode connects agent locations to a canonical installed copy. It is
 not a guarantee of a live link to this development checkout. Do not combine
 installers blindly or overwrite an installation with local edits. Supply the
-`dstack` path to avoid accidentally discovering vendored skills too.
+`dottastack` path to avoid accidentally discovering vendored skills too.
 
-For native plugin development, Claude supports `claude --plugin-dir ./dstack`.
+For native plugin development, Claude supports `claude --plugin-dir ./dottastack`.
 Cursor documents local plugins under `~/.cursor/plugins/local`; external-target
 symlinks there are skipped. Do not generalize skill-symlink behavior to native
 plugin installation. Use the host's supported local directory/import workflow.
