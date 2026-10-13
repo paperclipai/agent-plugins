@@ -1,6 +1,6 @@
 # Maintain this library at its source
 
-- Author Dotta's original skills and workflows under `dstack`. Edit the canonical
+- Author Dotta's original skills and workflows under `dottastack`. Edit the canonical
   checkout, not an installed copy or plugin cache. Keep supporting resources with
   their skill and preserve its invocation policy.
 - Compatibility is best effort. Prefer Cursor's useful capabilities, preserve a

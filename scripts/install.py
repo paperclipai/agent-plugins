@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Link dstack skills from this checkout; use shared discovery for Codex and Cursor."""
+"""Link dottastack skills from this checkout; use shared discovery for Codex and Cursor."""
 import argparse
 import os
 from pathlib import Path
@@ -14,9 +14,9 @@ def matches(path, target):
 
 
 def install(agents, home, dry_run=False):
-    skills = sorted((ROOT / "dstack/skills").glob("*/SKILL.md"))
+    skills = sorted((ROOT / "dottastack/skills").glob("*/SKILL.md"))
     if not skills:
-        raise ValueError("No dstack skills found")
+        raise ValueError("No dottastack skills found")
     planned, obsolete, conflicts = [], [], []
     for directory in dict.fromkeys(DIRECTORIES[agent] for agent in agents):
         for skill in skills:
