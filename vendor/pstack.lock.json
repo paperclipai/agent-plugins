@@ -3,7 +3,15 @@
   "revision": "37d2ddde97aaef8017ccef811e682948f421062d",
   "imported_on": "2026-10-10",
   "directory": "vendor/pstack",
-  "strategy": "verbatim tracked-file snapshot; no nested Git repository, submodule, or subtree",
+  "strategy": "tracked-file snapshot with documented local patches; no nested Git repository, submodule, or subtree",
+  "local_patches": [
+    {
+      "path": "skills/principle-boundary-discipline/SKILL.md",
+      "applied_on": "2026-10-21",
+      "reason": "Add module ownership, shared-change justification, delivery scope, and consumer verification guidance.",
+      "upstream_sha256": "62ac2862c2caa22dd14531f51c9c6bb445ceb198ca98a687e25b4d47c1f10a28"
+    }
+  ],
   "files": {
     ".github/workflows/validate.yml": {
       "sha256": "06c2ba3fccc5ff4cd2a2a0f29520f9be3ca9ef0cb12404de3ebc7c2f77c382d8",
@@ -582,7 +590,7 @@
       "executable": false
     },
     "skills/principle-boundary-discipline/SKILL.md": {
-      "sha256": "62ac2862c2caa22dd14531f51c9c6bb445ceb198ca98a687e25b4d47c1f10a28",
+      "sha256": "b03dfb2db7018a0ce1c6eded5177cce6e25d48d3300588e09b0adc392f5810d2",
       "executable": false
     },
     "skills/principle-boundary-discipline/agents/openai.yaml": {

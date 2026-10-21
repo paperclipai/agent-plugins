@@ -9,10 +9,12 @@
 - Keep host-specific manifests and adapters small. Document unsupported behavior;
   do not invent agent APIs or equate a manifest passing validation with a workflow
   working in every client. See `docs/compatibility.md`.
-- Treat `vendor/pstack` as a verbatim upstream snapshot. Keep local packaging and
-  provenance outside it. For an intentional upstream update, replace the snapshot
-  from the chosen revision, review the diff, and regenerate `vendor/pstack.lock.json`.
-  Preserve licenses and authorship. Do not add a nested `.git`, submodule, or subtree.
+- Keep the upstream base of `vendor/pstack` traceable. Record deliberate local
+  patches in `vendor/README.md` and `vendor/pstack.lock.json`, preserving the base
+  revision and original file hashes. For an upstream update, review the diff,
+  reconcile local patches, and regenerate the lock. Keep packaging and provenance
+  outside the snapshot. Preserve licenses and authorship. Do not add a nested
+  `.git`, submodule, or subtree.
 - Keep installation repeatable and preserve unrelated user files. Do not replace
   an entire agent skills directory or silently overwrite a conflicting skill.
 - Run `python3 scripts/verify_vendor.py` and `git diff --check` for repository
